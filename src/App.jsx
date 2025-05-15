@@ -15,6 +15,8 @@ function App() {
 
   navigator.geolocation.getCurrentPosition((position) => {
     const sortedPlaces = sortPlacesByDistance(AVAILABLE_PLACES, position.coords.latitude, position.coords.longitude);
+
+    setAvailablePlaces(sortedPlaces);
   });
 
   function handleStartRemovePlace(id) {
