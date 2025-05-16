@@ -64,6 +64,7 @@ function App() {
         <DeleteConfirmation
           onCancel={handleStopRemovePlace}
           onConfirm={handleRemovePlace}
+          onClose={handleStopRemovePlace}
         />
       </Modal>
 
